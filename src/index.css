@@ -1,0 +1,517 @@
+/* https://github.com/adrianhajdin/3D_portfolio/blob/main/src/index.css */
+
+
+/* C for problem solving - 2  Certificate for completing all the lessons in C for problem solving - 2
+Thursday, 13th July 2023*/
+/* https://www.codechef.com/certificates/public/f4a8c60  */
+
+
+/* Learn C - Pro Public
+Certificate for completing all the lessons and practice projects in Learn C
+Monday, 10th July 2023 */
+/* https://www.codechef.com/certificates/public/07c3c21 */
+
+
+/* C for problem solving - 1 Public
+Certificate for completing all the lessons in C for problem solving - 1
+Monday, 10th July 2023 */
+/* https://www.codechef.com/certificates/public/ead4e00 */
+
+
+/* Course/Test
+Complete JAVASCRIPT 
+Issue Date
+
+Feb 13, 2026*/
+/* https://www.knowledgegate.ai/certificate/689A84B3 */
+
+/* Certificate Details
+Course/Test
+Feb 13, 2026
+React and Redux  */
+/* https://www.knowledgegate.ai/certificate/7772BFA1 */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss";
+
+/* =========================
+   Theme
+========================= */
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-work-sans: "Work Sans", sans-serif;
+
+  --shadow-card:
+    0px 10px 35px -4px rgba(67, 83, 255, 0.15),
+    0px 1.5px 4px -1px rgba(67, 83, 255, 0.2);
+
+  --color-black-500: #000;
+}
+
+
+/* =========================
+   Root Variables
+========================= */
+
+:root {
+  --blue-rgb: 237 245 255;
+  --green-rgb: 125 161 35;
+}
+
+
+/* =========================
+   Base
+========================= */
+
+body {
+  font-family: var(--font-work-sans);
+}
+
+
+/* =========================
+   Dynamic Card Background
+========================= */
+
+body:has(.card[data-color="blue"]:hover) {
+  background-color: rgb(var(--blue-rgb) / 25%);
+}
+
+body:has(.card[data-color="green"]:hover) {
+  background-color: rgb(var(--green-rgb) / 25%);
+}
+
+
+/* =========================
+   Custom Utilities
+========================= */
+
+@utility max-container {
+  max-width: 64rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 126px;
+  min-height: calc(100vh - 80px);
+
+  @media (min-width: 640px) {
+    padding: 4rem;
+  }
+}
+
+@utility head-text {
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+
+  @media (min-width: 640px) {
+    font-size: 3rem;
+    line-height: 1.375;
+  }
+}
+
+@utility subhead-text {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+
+  @media (min-width: 640px) {
+    font-size: 1.875rem;
+  }
+}
+
+@utility blue-gradient_text {
+  background-image: linear-gradient(
+    to right,
+    #00c6ff,
+    #0072ff
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+@utility input {
+  display: block;
+  width: 100%;
+  margin-top: 0.625rem;
+  padding: 0.625rem;
+
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+
+  color: #111827;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  box-shadow: var(--shadow-card);
+
+  &:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 1px #3b82f6;
+  }
+}
+
+@utility textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.625rem;
+  padding: 0.625rem;
+
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+
+  color: #111827;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  box-shadow: var(--shadow-card);
+
+  &:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 1px #3b82f6;
+  }
+}
+
+@utility btn {
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+
+  background-image: linear-gradient(
+    to right,
+    #00c6ff,
+    #0072ff
+  );
+
+  border-radius: 0.5rem;
+
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgb(147 197 253 / 50%);
+  }
+
+  @media (min-width: 640px) {
+    width: auto;
+  }
+}
+
+@utility header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 64rem;
+  margin-inline: auto;
+
+  padding: 1rem 2rem;
+
+  background-color: transparent;
+
+  @media (min-width: 640px) {
+    padding-inline: 4rem;
+  }
+}
+
+@utility footer {
+  display: flex;
+  max-width: 64rem;
+  margin-inline: auto;
+
+  flex-direction: column;
+  gap: 1.75rem;
+
+  padding-inline: 2rem;
+  padding-bottom: 1.5rem;
+
+  @media (min-width: 640px) {
+    padding-inline: 4rem;
+  }
+}
+
+@utility footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem;
+}
+
+@utility info-box {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  max-width: 42rem;
+  margin-inline: 1.25rem;
+
+  padding: 1rem 2rem 3rem;
+
+  color: white;
+}
+
+@utility neo-btn {
+  position: absolute;
+  right: 0;
+  bottom: -1.25rem;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  width: 90%;
+  margin-inline: auto;
+
+  padding: 0.75rem 1.5rem;
+
+  border-radius: 0.5rem;
+
+  color: #3b82f6;
+  text-align: center;
+  font-weight: 600;
+
+  @media (min-width: 640px) {
+    width: 50%;
+  }
+}
+
+@utility cta {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1.75rem;
+
+  flex-direction: column;
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 640px) {
+    margin-top: 4rem;
+  }
+}
+
+@utility cta-text {
+  flex: 1;
+
+  color: #000;
+  font-size: 1.875rem;
+  font-weight: 800;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+
+/* =========================
+   Glassmorphism
+========================= */
+
+.glassmorphism {
+  background: rgba(8, 116, 239, 0.07);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+/* =========================
+   Logo
+========================= */
+
+.logo {
+  border-radius: 8.889px;
+
+  background: #fff;
+
+  box-shadow:
+    0px 10px 35px -4px rgba(67, 83, 255, 0.15),
+    0px 1.5px 4px -1px rgba(67, 83, 255, 0.2);
+}
+
+
+/* =========================
+   3D Block Button
+========================= */
+
+.block-container {
+  position: relative;
+  perspective: 500px;
+  transition: 250ms;
+}
+
+.block-container .btn-back {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  width: inherit;
+  height: inherit;
+
+  transition: 250ms;
+
+  transform-style: preserve-3d;
+  transform-origin: bottom right;
+  transform: rotateZ(15deg);
+
+  will-change: transform;
+
+  box-shadow: 16px 0 40px #e4e4e4;
+}
+
+.block-container .btn-back-red {
+  background: linear-gradient(
+    135deg,
+    #ff4b1f -20%,
+    #ff9068 120%
+  );
+}
+
+.block-container .btn-back-green {
+  background: linear-gradient(
+    135deg,
+    #adfda2 -20%,
+    #11d3f3 120%
+  );
+}
+
+.block-container .btn-back-yellow {
+  background: linear-gradient(
+    135deg,
+    #f7971e -20%,
+    #ffd200 120%
+  );
+}
+
+.block-container .btn-back-blue {
+  background: linear-gradient(
+    135deg,
+    #0061ff -20%,
+    #60efff 120%
+  );
+}
+
+.block-container .btn-back-orange {
+  background: linear-gradient(
+    135deg,
+    #ff0f7b -20%,
+    #f89b29 120%
+  );
+}
+
+.block-container .btn-back-pink {
+  background: linear-gradient(
+    135deg,
+    #e81cff -20%,
+    #40c9ff 120%
+  );
+}
+
+.block-container .btn-back-black {
+  background: linear-gradient(
+    135deg,
+    #0a1647 -20%,
+    #e4e7e4 120%
+  );
+}
+
+.block-container .btn-front {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  width: inherit;
+  height: inherit;
+
+  background-color: #ffffff33;
+
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+
+  transition: 250ms;
+
+  transform-style: preserve-3d;
+  transform-origin: top left;
+
+  overflow: hidden;
+}
+
+
+/* Hover */
+
+.block-container:hover > .btn-back {
+  transform:
+    translateZ(20px)
+    rotateZ(15deg)
+    rotateX(-20deg)
+    rotateY(-20deg);
+}
+
+.block-container:hover > .btn-front {
+  transform:
+    translateZ(80px)
+    translateY(-5px)
+    rotateX(15deg)
+    rotateY(15deg);
+}
+
+
+/* =========================
+   Neo Brutalism
+========================= */
+
+.neo-brutalism-blue {
+  position: relative;
+
+  background: #2b77e7;
+
+  border-radius: 10px;
+  border: 1px solid #2b77e7;
+
+  box-shadow:
+    0.6vmin 0.6vmin #336cc1,
+    1vmin 1vmin #0092db,
+    1vmin 1vmin #0092db,
+    0.65vmin 1vmin #0092db,
+    1vmin 0.65vmin #0092db;
+}
+
+.neo-brutalism-white {
+  background: #fff;
+
+  border: 1px solid #fff;
+
+  box-shadow:
+    0.6vmin 0.6vmin #fff,
+    1vmin 1vmin #d2e4ff,
+    1vmin 1vmin #d2e4ff,
+    0.65vmin 1vmin #d2e4ff,
+    1vmin 0.65vmin #d2e4ff;
+}
+
