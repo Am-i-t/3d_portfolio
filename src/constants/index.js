@@ -1,4 +1,4 @@
-import { codechef, knowledgegate } from "../assets/images";
+import { codechef, knowledgegate , apnacollege , udemy } from "../assets/images";
 import {
   airbnb,
   amazon,
@@ -31,6 +31,7 @@ import {
   zoom,
   snapgram,
   threads,
+  typescript,
 } from "../assets/icons";
 
 export const skills = [
@@ -120,15 +121,15 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: docker,
-    name: "Docker",
-    type: "DevOps",
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend",
   },
-  {
-    imageUrl: kubernets,
-    name: "Kubernetes",
-    type: "DevOps",
-  },
+  // {
+  //   imageUrl: kubernets,
+  //   name: "Kubernetes",
+  //   type: "DevOps",
+  // },
 ];
 
 export const certificates = [
@@ -203,6 +204,34 @@ export const certificates = [
     ],
     link: "https://www.knowledgegate.ai/certificate/7772BFA1",
   },
+  {
+    title: "Delta – Web Development",
+    platform_name: "Apna College",
+    icon: apnacollege,
+    iconBg: "#FFFFFF",
+    tagBg: "#0099ff",
+    date: "July 1, 2026",
+    points: [
+      "Successfully completed the Delta Web Development course through apna college.",
+      "Learned core concepts of web development, including frontend and backend technologies.",
+      "Gained practical experience in building web applications and understanding full-stack development.",
+    ],
+    link: "https://www.apnacollege.in/admin/api/certificate_v2/68d3fa0826af06db09016814/user/689f6f7db4e02cc462071b56?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=JXaeJhqS5DTfj8CiRoC5wHAiGJeTIxQRv47RfR81&certificateId=6afc6269911b5b1d240a4b4e",
+  },
+  {
+    title: "Next.js – The Complete Guide",
+    platform_name: "Udemy",
+    icon: udemy,
+    iconBg: "#FFFFFF",
+    tagBg: "#A435F0",
+    date: "November 5, 2026",
+    points: [
+      "Successfully completed Maximilian Schwarzmüller's Next.js course on Udemy.",
+      "Learned Next.js fundamentals, including routing, layouts, Server Components, and data fetching.",
+      "Gained hands-on experience with server-side rendering, database integration, and building full-stack applications using Next.js.",
+    ],
+    link: "https://www.udemy.com/certificate/UC-177966ba-6095-4253-b627-605789638803/",
+  },
 ];
 
 export const socialLinks = [
@@ -251,17 +280,17 @@ export const projects = [
   {
     iconUrl: snapgram,
     theme: "btn-back-pink",
-    name: "Full Stack LinkedIn Clone",
-    description:
-      "Designed and developed a professional networking platform that allows users to create profiles, connect with others, share posts, interact with content, and communicate through a seamless social networking experience.",
-    link: "https://github.com/Am-i-t/linkedin-Clone",
+   name: "DevNotes",
+     description:
+    "Designed and developed a full-stack note-taking application using Next.js that allows users to create, edit, delete, and manage their personal notes with a clean and responsive interface. Implemented database integration and server-side functionality for seamless note management.",
+    link: "https://github.com/Am-i-t/dev-notes",
   },
-  {
-    iconUrl: bag,
-    theme: "btn-back-black",
-    name: "E-commerce Application",
-    description:
-      "Designed and developed an e-commerce web application that allows users to browse products, manage their cart, place orders, and securely complete purchases through a user-friendly interface.",
-    link: "https://github.com/Am-i-t/E-commerce",
-  },
+  // {
+  //   iconUrl: bag,
+  //   theme: "btn-back-black",
+  //   name: "E-commerce Application",
+  //   description:
+  //     "Designed and developed an e-commerce web application that allows users to browse products, manage their cart, place orders, and securely complete purchases through a user-friendly interface.",
+  //   link: "https://github.com/Am-i-t/E-commerce",
+  // },
 ];
