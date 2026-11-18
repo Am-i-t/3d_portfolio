@@ -205,20 +205,6 @@ export const certificates = [
     link: "https://www.knowledgegate.ai/certificate/7772BFA1",
   },
   {
-    title: "Delta – Web Development",
-    platform_name: "Apna College",
-    icon: apnacollege,
-    iconBg: "#FFFFFF",
-    tagBg: "#0099ff",
-    date: "July 1, 2026",
-    points: [
-      "Successfully completed the Delta Web Development course through apna college.",
-      "Learned core concepts of web development, including frontend and backend technologies.",
-      "Gained practical experience in building web applications and understanding full-stack development.",
-    ],
-    link: "https://www.apnacollege.in/admin/api/certificate_v2/68d3fa0826af06db09016814/user/689f6f7db4e02cc462071b56?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=JXaeJhqS5DTfj8CiRoC5wHAiGJeTIxQRv47RfR81&certificateId=6afc6269911b5b1d240a4b4e",
-  },
-  {
     title: "Next.js – The Complete Guide",
     platform_name: "Udemy",
     icon: udemy,
@@ -231,6 +217,20 @@ export const certificates = [
       "Gained hands-on experience with server-side rendering, database integration, and building full-stack applications using Next.js.",
     ],
     link: "https://www.udemy.com/certificate/UC-177966ba-6095-4253-b627-605789638803/",
+  },
+   {
+    title: "Delta – Web Development",
+    platform_name: "Apna College",
+    icon: apnacollege,
+    iconBg: "#FFFFFF",
+    tagBg: "#0099ff",
+    date: "November 16, 2026",
+    points: [
+      "Successfully completed the Delta Web Development course through apna college.",
+      "Learned core concepts of web development, including frontend and backend technologies.",
+      "Gained practical experience in building web applications and understanding full-stack development.",
+    ],
+    link: "https://www.apnacollege.in/admin/api/certificate_v2/68d3fa0826af06db09016814/user/689f6f7db4e02cc462071b56?lw_client=62a6cd5e1e9e2fbf212d608d&access_token=JXaeJhqS5DTfj8CiRoC5wHAiGJeTIxQRv47RfR81&certificateId=6afc6269911b5b1d240a4b4e",
   },
 ];
 
